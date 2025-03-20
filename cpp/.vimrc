@@ -16,4 +16,4 @@ let &path="/include,/data"
 
 " map F8 key to compile and run the current file
 
-map <F8> :w <CR> :!gcc % -o %< && ./%< <CR>
+map <F8> :w <CR> :!g++ % -o %< && ./%< <CR>
