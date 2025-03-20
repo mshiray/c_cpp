@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+c/main
+cpp/hello
