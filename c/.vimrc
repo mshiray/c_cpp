@@ -1,5 +1,6 @@
 " VIM configuration file with cofig param set for c programming
 
+set number
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
