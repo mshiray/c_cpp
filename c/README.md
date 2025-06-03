@@ -27,4 +27,5 @@ Compile and run instructions:
     3. VIM:
 
         Press F8 to compile-run
-        Note: Make sure provided .vimrc is in pwd.
+        Note: Make sure provided .vimrc is in pwd
+        
