@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SIGNATURE "GIF89a"
+#define SIGNATURE1 "GIF89a"
+#define SIGNATURE2 "GIF87a"
 #define SIG_LEN 6
 
 void process_file(const char *filepath)
@@ -15,7 +16,8 @@ void process_file(const char *filepath)
     size_t n = fread(buf, 1, SIG_LEN, fp);
     fclose(fp);
 
-    if (n == SIG_LEN && memcmp(buf, SIGNATURE, SIG_LEN) == 0)
+    if (n == SIG_LEN && 
+        (memcmp(buf, SIGNATURE1, SIG_LEN) == 0 || memcmp(buf, SIGNATURE2, SIG_LEN) == 0))
     {
         // Rename .jpg to .gif
         char newname[MAX_PATH];
