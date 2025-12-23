@@ -3,7 +3,7 @@
 
 Starter template C programming 'Hello World' project for VS code editor on Linux (written and tested on Ubuntu).
 
-Prequisites: test
+Prequisites:
 
 1. VS Code Editor with c/c++ plugins installed.
 2. gcc 13.x installed on Linux host OS.
